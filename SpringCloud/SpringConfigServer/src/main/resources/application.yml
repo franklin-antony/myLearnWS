@@ -1,6 +1,12 @@
 ---
 server:
   port: 8888
+security:
+  basic:
+    enabled: true
+  user:
+    name: itsme
+    password: itsme  
 spring:
   cloud:
     config:
