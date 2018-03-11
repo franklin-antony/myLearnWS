@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { IProduct } from "./products";
 
 
@@ -11,7 +11,7 @@ import { IProduct } from "./products";
 
 })
 
-export class ProductListComponent{
+export class ProductListComponent implements OnInit{
     pageTitle: string = 'Product List!!';
     dummyItems: any[] = ['A','B','C'];
     imageWidth : number = 50;
@@ -48,4 +48,10 @@ export class ProductListComponent{
         this.showImage=!this.showImage;
         //alert(this.showImage);
     };
+
+
+    ngOnInit() : void
+    {
+        console.log("Angular lifecycle On-Init");
+    }
 }
