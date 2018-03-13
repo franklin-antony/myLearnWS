@@ -1,0 +1,22 @@
+cf login -a https://api.run.pivotal.io
+
+---Pushing apps to CF
+cf push <app_name>
+
+---Listing of all apps
+cf apps
+
+---Listing details particular app
+cf app <app_name>
+
+---Streaming Logs for an application
+cf logs <app_name>
+
+---Scaling app horizontally (No downtime)
+cf scale <app_name> -i 3
+
+---Scaling app vertically(Current container dropped. New one created. Happens with downtime)
+cf scale <app_name> -m 1G
+
+---Detailed events of the application
+cf events <app_name>
