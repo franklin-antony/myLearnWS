@@ -20,3 +20,15 @@ cf scale <app_name> -m 1G
 
 ---Detailed events of the application
 cf events <app_name>
+
+---Creating a free mysql instance(cleardb is a mysql instance. spark is the free size)
+cf create-service cleardb spark <service_name>
+
+---Binding the application to the mysql service
+cf bind-service <app_name> <service_name>
+
+
+---Creating user provided service (Usuall to connect to Rest APIs, Oracle RAC)
+cf create-user-provided-service <application_service_name> -p uri
+
+
