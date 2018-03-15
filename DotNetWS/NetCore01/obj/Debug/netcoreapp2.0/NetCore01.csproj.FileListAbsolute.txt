@@ -1,0 +1,10 @@
+D:\LearnWS\myLearnWSRepo\DotNetWS\NetCore01\bin\Debug\netcoreapp2.0\NetCore01.deps.json
+D:\LearnWS\myLearnWSRepo\DotNetWS\NetCore01\bin\Debug\netcoreapp2.0\NetCore01.runtimeconfig.json
+D:\LearnWS\myLearnWSRepo\DotNetWS\NetCore01\bin\Debug\netcoreapp2.0\NetCore01.runtimeconfig.dev.json
+D:\LearnWS\myLearnWSRepo\DotNetWS\NetCore01\bin\Debug\netcoreapp2.0\NetCore01.dll
+D:\LearnWS\myLearnWSRepo\DotNetWS\NetCore01\bin\Debug\netcoreapp2.0\NetCore01.pdb
+D:\LearnWS\myLearnWSRepo\DotNetWS\NetCore01\obj\Debug\netcoreapp2.0\NetCore01.csproj.CoreCompileInputs.cache
+D:\LearnWS\myLearnWSRepo\DotNetWS\NetCore01\obj\Debug\netcoreapp2.0\NetCore01.AssemblyInfoInputs.cache
+D:\LearnWS\myLearnWSRepo\DotNetWS\NetCore01\obj\Debug\netcoreapp2.0\NetCore01.AssemblyInfo.cs
+D:\LearnWS\myLearnWSRepo\DotNetWS\NetCore01\obj\Debug\netcoreapp2.0\NetCore01.dll
+D:\LearnWS\myLearnWSRepo\DotNetWS\NetCore01\obj\Debug\netcoreapp2.0\NetCore01.pdb
