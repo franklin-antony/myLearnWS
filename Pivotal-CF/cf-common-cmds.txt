@@ -31,4 +31,8 @@ cf bind-service <app_name> <service_name>
 ---Creating user provided service (Usuall to connect to Rest APIs, Oracle RAC)
 cf create-user-provided-service <application_service_name> -p uri
 
+---Create user provided service for Log Drain(eg: PaperTrail)
+---logs4.papertrailapp.com:26741 (Endpoint created in PaperTrail)
+cf create-user-provided-service articulate-log-drain -l syslog://logs4.papertrailapp.com:26741
+cf bind-service articulate articulate-log-drain
 
