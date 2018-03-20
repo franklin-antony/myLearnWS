@@ -36,3 +36,17 @@ cf create-user-provided-service <application_service_name> -p uri
 cf create-user-provided-service articulate-log-drain -l syslog://logs4.papertrailapp.com:26741
 cf bind-service articulate articulate-log-drain
 
+
+
+---Blue Green deployment
+---Checking the current active routes
+cf routes
+
+---Pushing a new version [Blue Green deployments]
+	cf push articulate-v2 -p target\articulate-1.0.jar -m 512M -n articulate-excellent-gecko-temp --no-start
+	cf bind-service articulate-v2 attendee-service
+	cf map-route articulate-v2 cfapps.io -n articulate-excellent-gecko (Mapping the production route to new deployment)
+	cf scale articulate -i 1 (scale down the old version)
+	cf scale articulate-v2 -i 2 (scale up the new version)
+	cf unmap-route articulate cfapps.io -n articulate-excellent-gecko (unmap the route to old deployment)
+	cf unmap-route articulate-v2 cfapps.io -n articulate-v2-impressive-ratel
