@@ -37,10 +37,9 @@ cf create-user-provided-service articulate-log-drain -l syslog://logs4.papertrai
 cf bind-service articulate articulate-log-drain
 
 
-
 ---Blue Green deployment
 ---Checking the current active routes
-cf routes
+	cf routes
 
 ---Pushing a new version [Blue Green deployments]
 	cf push articulate-v2 -p target\articulate-1.0.jar -m 512M -n articulate-excellent-gecko-temp --no-start
