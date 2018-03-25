@@ -49,3 +49,16 @@ cf bind-service articulate articulate-log-drain
 	cf scale articulate-v2 -i 2 (scale up the new version)
 	cf unmap-route articulate cfapps.io -n articulate-excellent-gecko (unmap the route to old deployment)
 	cf unmap-route articulate-v2 cfapps.io -n articulate-v2-impressive-ratel
+	
+	
+---Auto scaling apps
+	---Checking the autoscaling options available in market place
+	cf m -s app-autoscaler
+	---Creating the auto-scaler
+	cf create-service app-autoscaler standard autoscaler
+	---Binding the autoscaler
+	cf bind-service articulate-v2 autoscaler
+	
+	
+	
+	
