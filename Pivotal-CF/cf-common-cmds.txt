@@ -59,6 +59,7 @@ cf bind-service articulate articulate-log-drain
 	---Binding the autoscaler
 	cf bind-service articulate-v2 autoscaler
 	
-	
+----Working with build-packs
+	cf buildpacks
 	
 	
