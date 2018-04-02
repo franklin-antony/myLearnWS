@@ -37,6 +37,6 @@ public class MicroAppApplication {
 	public String balancedMessage()
 	{
 		
-		return "Retrieving information from : "+ restTemplate.getForEntity("http://service", String.class).getBody();
+		return "Retrieving information from nodes: "+ restTemplate.getForEntity("http://service", String.class).getBody();
 	}
 }
